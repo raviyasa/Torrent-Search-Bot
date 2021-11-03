@@ -22,6 +22,7 @@ DEFAULT_SEARCH_MARKUP = [
                     [InlineKeyboardButton("Developers", url="https://t.me/media_bot_updates"),
                     InlineKeyboardButton("Developer ☯️", url="https://t.me/darkz_hacker_devil")],
                     [InlineKeyboardButton("Torrent Leech", url="https://t.me/joinchat/_i87Gbdh0oVhM2Jl")]
+]
 
 @TorrentBot.on_message(filters.command("start"))
 async def start_handler(_, message: Message):
