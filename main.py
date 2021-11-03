@@ -19,16 +19,17 @@ DEFAULT_SEARCH_MARKUP = [
                      InlineKeyboardButton("Go Inline 🔍", switch_inline_query="")],
                     [InlineKeyboardButton("Search Anime 🔎", switch_inline_query_current_chat="!a "),
                      InlineKeyboardButton("GO Inline 🔍", switch_inline_query_current_chat="!a ")],
-                    [InlineKeyboardButton("Developer", url="https://t.me/media_bot_updates")]
-                ]
-
+                    [InlineKeyboardButton("Developers", url="https://t.me/media_bot_updates"),
+                    InlineKeyboardButton("Developer ☯️", url="https://t.me/darkz_hacker_devil")],
+                    [InlineKeyboardButton("Torrent Leech", url="https://t.me/joinchat/_i87Gbdh0oVhM2Jl")]
 
 @TorrentBot.on_message(filters.command("start"))
 async def start_handler(_, message: Message):
     try:
         await message.reply_text(
-            text="Hello, I am Torrent Search Bot!\n"
-                 "I can search Torrent Magnetic Links from Inline.\n\n"
+            text="Hello 😊, I am Torrent Search Bot! 🥲\n"
+                 "I can search Torrent Magnetic Links from Inline.😁\n"
+                 "Just Click a button below and type movie's name and see the magic 😝\n\n"
                  "Made by @darkz_hacker_devil",
             disable_web_page_preview=True,
             parse_mode="Markdown",
@@ -98,7 +99,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Leechers:** `{torrentList[i]['Leechers']}`\n"
                                              f"**Uploader:** `{torrentList[i]['Uploader']}`\n"
                                              f"**Uploaded on {torrentList[i]['Date']}**\n\n"
-                                             f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                             f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @darkz_hacker_devil",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
