@@ -11,15 +11,15 @@ from tool import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 TorrentBot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 DEFAULT_SEARCH_MARKUP = [
-                    [InlineKeyboardButton("Search YTS", switch_inline_query_current_chat="!yts "),
-                     InlineKeyboardButton("Go Inline", switch_inline_query="!yts ")],
-                    [InlineKeyboardButton("Search ThePirateBay", switch_inline_query_current_chat="!pb "),
-                     InlineKeyboardButton("Go Inline", switch_inline_query="!pb ")],
-                    [InlineKeyboardButton("Search 1337x", switch_inline_query_current_chat=""),
-                     InlineKeyboardButton("Go Inline", switch_inline_query="")],
-                    [InlineKeyboardButton("Search Anime", switch_inline_query_current_chat="!a "),
-                     InlineKeyboardButton("GO Inline", switch_inline_query_current_chat="!a ")],
-                    [InlineKeyboardButton("Developer: @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                    [InlineKeyboardButton("Search YTS 🔎", switch_inline_query_current_chat="!yts "),
+                     InlineKeyboardButton("Go Inline 🔍", switch_inline_query="!yts ")],
+                    [InlineKeyboardButton("Search ThePirateBay 🔎", switch_inline_query_current_chat="!pb "),
+                     InlineKeyboardButton("Go Inline 🔍", switch_inline_query="!pb ")],
+                    [InlineKeyboardButton("Search 1337x 🔎", switch_inline_query_current_chat=""),
+                     InlineKeyboardButton("Go Inline 🔍", switch_inline_query="")],
+                    [InlineKeyboardButton("Search Anime 🔎", switch_inline_query_current_chat="!a "),
+                     InlineKeyboardButton("GO Inline 🔍", switch_inline_query_current_chat="!a ")],
+                    [InlineKeyboardButton("Developer", url="https://t.me/darkz_hacker_devil")]
                 ]
 
 
@@ -29,7 +29,7 @@ async def start_handler(_, message: Message):
         await message.reply_text(
             text="Hello, I am Torrent Search Bot!\n"
                  "I can search Torrent Magnetic Links from Inline.\n\n"
-                 "Made by @AbirHasan2005",
+                 "Made by Ravidu Yasas(https://t.me/darkz_hacker_devil)",
             disable_web_page_preview=True,
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
