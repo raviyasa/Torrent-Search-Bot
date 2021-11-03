@@ -19,7 +19,7 @@ DEFAULT_SEARCH_MARKUP = [
                      InlineKeyboardButton("Go Inline 🔍", switch_inline_query="")],
                     [InlineKeyboardButton("Search Anime 🔎", switch_inline_query_current_chat="!a "),
                      InlineKeyboardButton("GO Inline 🔍", switch_inline_query_current_chat="!a ")],
-                    [InlineKeyboardButton("Developer", url="https://t.me/darkz_hacker_devil")]
+                    [InlineKeyboardButton("Developer", url="https://t.me/media_bot_updates")]
                 ]
 
 
@@ -29,7 +29,7 @@ async def start_handler(_, message: Message):
         await message.reply_text(
             text="Hello, I am Torrent Search Bot!\n"
                  "I can search Torrent Magnetic Links from Inline.\n\n"
-                 "Made by Ravidu Yasas(https://t.me/darkz_hacker_devil)",
+                 "Made by <a href="https://t.me/darkz_hacker_devil">Ravidu Yasas</a>",
             disable_web_page_preview=True,
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
